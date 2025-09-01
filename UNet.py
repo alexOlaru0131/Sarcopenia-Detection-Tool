@@ -1,8 +1,9 @@
-import torch.nn as nn
-import torch
-import torch.nn.functional as F
-from torch.utils.data import Dataset, DataLoader
-from vertebraDataset import VertebraDataset
+###### UNet.py ######
+# ->
+
+###### IMPORTS ######
+from imports import *
+###### END IMPORTS ######
 
 class UNet(nn.Module):
     def __init__(self):

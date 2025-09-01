@@ -1,11 +1,9 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sat May 10 17:56:42 2025
+###### calcule_muscle_area.py ######
+# ->
 
-@author: alexo
-"""
-
-import numpy as np
+###### IMPORTS ######
+from imports import *
+###### END IMPORTS ######
 
 def calculate_areas(saved_regions, pixel_spacing_mm):
     # pixel_spacing_mm trebuie să fie (row_spacing, col_spacing)

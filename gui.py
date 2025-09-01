@@ -1,22 +1,9 @@
-import tkinter as tk
+###### gui.py ######
+# ->
 
-root = tk.Tk()
-if tk._default_root is not None:
-    try:
-        root.destroy()
-    except Exception:
-        pass
-
-import numpy as np
-from tkinter import ttk, filedialog, messagebox
-from PIL import Image, ImageTk
-from checkVerteber import test_model
-from detectMuscles import detect_muscles
-from analyseAreas import calculate_areas
-from functools import partial
-import pydicom
-import os
-import dicom2jpg
+###### IMPORTS ######
+from imports import *
+###### END IMPORTS ######
 
 def guess_sex_from_name(name):
     if not name or name == "-":

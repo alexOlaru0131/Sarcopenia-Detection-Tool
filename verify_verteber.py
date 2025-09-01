@@ -1,20 +1,10 @@
-import torch
-from torchvision import transforms
-from PIL import Image
-import os
-os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
-import matplotlib.pyplot as plt
-import numpy as np
-from scipy.ndimage import label, center_of_mass, binary_dilation, binary_opening, binary_erosion
-from scipy.signal import convolve2d
-from skimage.measure import regionprops, label as sk_label
-from skimage.morphology import skeletonize
-from UNet import UNet
-import pydicom
-import tkinter as tk
-from tkinter import ttk
-from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
+###### verify_verteber.py ######
+# ->
 
+###### IMPORTS ######
+from imports import *
+from UNet import *
+###### END IMPORTS ######
 
 def count_branch_points(skeleton):
     kernel = np.array([[1, 1, 1],

@@ -1,8 +1,9 @@
-import numpy as np
-from scipy.ndimage import find_objects, center_of_mass, binary_dilation, binary_fill_holes
-from skimage.measure import regionprops, label as sk_label
-from skimage.exposure import rescale_intensity
-from scipy.ndimage import gaussian_filter
+###### analyse_muscles.py ######
+# ->
+
+###### IMPORTS ######
+from imports import *
+###### END IMPORTS ######
 
 def detect_muscles(
         image_np, mask_np, 
@@ -21,10 +22,10 @@ def detect_muscles(
     image = rescale_intensity(image, out_range=(0, 255)).astype(np.uint8)
 
     muscle_mask = (image > lower_threshold) & (image < upper_threshold)
-    muscle_mask = binary_fill_holes(muscle_mask)
+    muscle_mask = binary_fill_holes(muscle_mask) 
 
     labeled = sk_label(muscle_mask)
-    filtered = np.zeros_like(muscle_mask, dtype=np.uint8)
+    filtered = np.zeros_like(muscle_mask, dtype=np.uint8) 
 
     bounding_box = find_objects(mask_np.astype(int))
     if bounding_box:
