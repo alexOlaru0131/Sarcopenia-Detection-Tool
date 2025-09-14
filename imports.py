@@ -20,23 +20,21 @@ import cv2
 # from scipy.signal import convolve2d
 
 # Sci-kit //
-# from skimage.exposure import rescale_intensity
-# from skimage.measure import regionprops, label as sk_label
-# from skimage.morphology import skeletonize
+import skimage
+from skimage import exposure
 
 # Other imports //
 import os
 import numpy as np
 import matplotlib.pyplot as plt
-import pydicom
-# import dicom2jpg
+import pydicom as dicom
 import shutil
 import tkinter as tk
 import time
 import screeninfo
 from screeninfo import get_monitors
 from tkinter import *
-from tkinter.filedialog import askopenfilename
+from tkinter.filedialog import askopenfilename, askdirectory
 import tqdm
 from tkinter import ttk, filedialog, messagebox
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
