@@ -1,17 +1,9 @@
 # Sarcopenia Detection Tool v1.0
-
-> SECOND VERSION IS UNDER DEVELOPMENT!
-
 <img src="image.png" alt="Sarcopenia Detection Tool">
 
 <p align="center">
-<a href=""><strong>Documentation</strong> (under development)</a> •
-<a href=""><strong>Ask a question</strong></a>
+<a href=""><strong>Documentation</strong></a>
 </p>    
-
-<p align="center">
-Made in collaboration with <a href="https://control.utcluj.ro/"><strong>Adapted Research Group</strong></a>
-</p>
 
 ## About
 Sarcopenia is a progressive disorder involving a significant loss of muscle mass, strength and function, primarily due to factors like aging, diet, exercise and others. 
